@@ -1,65 +1,57 @@
-<<<<<<< HEAD
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<h1>Projeto Laravel de Estudos</h1>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<p>Este projeto foi desenvolvido com <strong>Laravel</strong> com o objetivo principal de treino e aprendizado sobre integração com frontend, autenticação e funcionalidades básicas de CRUD, além do envio de emails. Não é um sistema pronto para produção, mas sim um laboratório para testar conceitos e funcionalidades principais.</p>
 
-## About Laravel
+<h2>Funcionalidades</h2>
+<ul>
+    <li><strong>Sistema de login e cadastro</strong> com autenticação básica.</li>
+    <li><strong>CRUD de usuários</strong> com paginação (páginas 1/2/3) e sistema de busca por nome.</li>
+    <li><strong>Requisições fetch via JavaScript</strong> integradas com Laravel para chamadas assíncronas.</li>
+    <li><strong>Envio de email de suporte:</strong>
+        <ul>
+            <li>Usuário escreve uma mensagem e envia o email.</li>
+            <li>Email é enviado via Laravel Mail.</li>
+        </ul>
+    </li>
+    <li>Sistema simples de páginas com navegação e busca no CRUD.</li>
+</ul>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<h2>Objetivo do Projeto</h2>
+<p>Este projeto foi criado para experimentar e praticar:</p>
+<ul>
+    <li>Integração entre frontend (JS fetch) e backend Laravel.</li>
+    <li>Autenticação e autorização básica.</li>
+    <li>Implementação de CRUD com paginação e filtros.</li>
+    <li>Envio de emails usando Laravel Mail.</li>
+    <li>Construção funcional sem foco no design visual (frontend simples e funcional).</li>
+</ul>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<h2>Observações Importantes</h2>
+<ul>
+    <li>Não há implementação avançada de segurança para identificar usuário que envia email (e.g. associar email à conta logada).</li>
+    <li>Validações de segurança e proteção contra ataques ainda devem ser ajustadas para uso em produção.</li>
+    <li>O frontend é simples e direto, com foco na funcionalidade e não na aparência.</li>
+    <li>É um projeto para estudo e prática, não para uso comercial.</li>
+</ul>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<h2>Como rodar o projeto</h2>
+<ol>
+    <li>Clone o repositório.</li>
+    <li>Configure seu arquivo <code>.env</code> com as credenciais do banco de dados e SMTP para envio de emails.</li>
+    <li>Rode as migrations e o queue do email
+    </li>
+    <li>Inicie os servidores locais:
+        <pre><code>php artisan serve
+        <pre><code>npm run dev
+        </code></pre>
+    </li>
+    <li>Acesse o sistema via navegador, faça login, teste o CRUD e o envio de email.</li>
+</ol>
 
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-=======
-# Cadastro-API-EmailSend
->>>>>>> b441ba8d5d58e68759afe46c35f8b191cd98be5c
+<h2>Tecnologias usadas</h2>
+<ul>
+    <li>Laravel Framework (PHP)</li>
+    <li>Blade Templates</li>
+    <li>JavaScript Fetch API</li>
+    <li>SMTP para envio de email</li>
+</ul>
